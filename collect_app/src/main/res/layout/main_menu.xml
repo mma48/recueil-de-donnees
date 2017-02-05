@@ -9,6 +9,8 @@
   the specific language governing permissions and limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rl"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -17,7 +19,8 @@
     android:layout_marginRight="0dp"
     android:layout_marginTop="0dp"
     android:orientation="vertical"
-    android:padding="0dp" >
+    android:padding="0dp"
+    >
 
     <TextView
         android:id="@+id/main_menu_header"
@@ -27,17 +30,13 @@
         android:paddingBottom="1dp"
         android:paddingTop="6dp"
         android:text="@string/app_name"
-        android:textSize="21sp"
-        android:textStyle="bold" />
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/couleur_text" />
 
-    <TextView
+    <View
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingBottom="10dp"
-        android:paddingTop="1dp"
-        android:text="@string/main_menu_details"
-        android:textSize="17sp" />
+        android:layout_height="20dp" />
 
     <ScrollView
         android:layout_width="fill_parent"
@@ -51,64 +50,152 @@
 			android:paddingStart="10dp"
             android:paddingLeft="10dp"
 			android:paddingEnd="10dp"
-            android:paddingRight="10dp" >
+            android:paddingRight="10dp"
+            android:gravity="center"
+            >
 
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="10dp" />
 
-            <Button
-                android:id="@+id/enter_data"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:textSize="21sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/image9"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_remplir"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/enter_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textSize="21sp"
+                    android:textColorHighlight="@color/couleur_texte_bouton"
+                    android:textColorHint="@color/couleur_texte_bouton"
+                    android:textColorLink="@color/couleur_texte_bouton"
+                    android:background="@color/couleur_text1"
+                    android:text="tototo"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="5dp" />
+                android:layout_height="10dp" />
 
-            <Button
-                android:id="@+id/review_data"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:textSize="21sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_editer"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/review_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textSize="21sp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="5dp"
+                android:layout_height="10dp"
                 android:id="@+id/review_spacer" />
 
-            <Button
-                android:id="@+id/send_data"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:textSize="21sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image10"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_envoie"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/send_data"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:textSize="21sp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="20dp" />
+                android:layout_height="10dp" />
 
-            <Button
-                android:id="@+id/get_forms"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:textSize="21sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image8"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/icon_telecharger"
+                    android:scaleType="fitXY"/>
+
+                <Button
+                    android:id="@+id/get_forms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:padding="10dp"
+                    android:textColorHighlight="@drawable/black"
+                    android:textColorHint="@drawable/black"
+                    android:textColorLink="@drawable/black"
+                    android:background="@color/couleur_text1"
+                    android:textColor="@color/couleur_texte_bouton"
+                    android:textSize="21sp"
+                    android:layout_marginRight="10dp" />
+
+            </LinearLayout>
 
             <View
                 android:layout_width="fill_parent"
-                android:layout_height="5dp"
+                android:layout_height="10dp"
                 android:id="@+id/get_forms_spacer" />
 
             <Button
                 android:id="@+id/manage_forms"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:textSize="21sp" />
+                android:padding="10dp"
+                android:textSize="21sp"
+                android:textColorHighlight="@drawable/black"
+                android:textColorHint="@drawable/black"
+                android:textColorLink="@drawable/black"
+                android:textColor="@color/couleur_texte_bouton"
+                android:visibility="invisible" />
         </LinearLayout>
     </ScrollView>
 

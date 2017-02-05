@@ -19,4 +19,7 @@ the License.
     <drawable name="white">#ffffffff</drawable>
     <drawable name="black">#ff000000</drawable>
 
+    <color name="couleur_text">#1bb0e2</color>
+    <color name="couleur_text1">#053765</color>
+    <color name="couleur_texte_bouton">#fffefe</color>
 </resources>

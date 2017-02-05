@@ -119,7 +119,7 @@ public class Collect extends Application {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        return getString(R.string.app_name) + versionDetail;
+        return getString(R.string.app_name);// + versionDetail;
     }
 
     /**
